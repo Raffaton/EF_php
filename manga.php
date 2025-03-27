@@ -44,7 +44,11 @@ try {
     <h2>Personnages :</h2>
     <ul>
         <?php foreach ($personnages_manga as $personnage): ?>
-            <li><?= $personnage['nom'] ?></li>
+            <li>
+                <a href="personnage.php?id_manga=<?=$manga['id_manga'] ?>&nom=<?= $personnage['nom'] ?>">
+                    <?= $personnage['nom'] ?>
+                </a>
+            </li>
         <?php endforeach; ?>
     </ul>
 
