@@ -35,5 +35,18 @@ try {
     <?php else: ?>
         <p>Aucun manga trouvé</p>
     <?php endif; ?>
+
+    <form action="addAuthor.php" method="POST">
+        <h1>Ajouter un Auteur</h1>
+        
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Saisir nom auteur" required>
+        <br>
+        <label for="date_naissance">Date de naissance :</label>
+        <input type="number" id="date_naissance" name="date_naissance" 
+               placeholder="Saisir date de naissance" required>
+        <br>
+        <input type="submit" value="Ajouter">
+    </form>
 </body>
 </html>
